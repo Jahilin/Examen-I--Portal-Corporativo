@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mublesig Honduras</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <a href="index.html">Quienes Somos</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="lotes.html">Lotes Especiales</a>
+                <a href="licitaciones.html">Licitaciones</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <img src="img/logo.png" alt="Logo de la marca">
+            <h1>MUBLESIG HONDURAS</h1>
+            <p>Estamos fácilmente a tu alcance, ¡Escríbenos!</p>
+        </header>
+    </div>
+    <main>
+        <div>
+                <h2>Teléfonos</h2>
+                <table>
+                    <tr>
+                        <th>Departamento</th>
+                        <th>Teléfono</th>
+                    </tr>
+                    <tr>
+                        <td>Comayagua</td>
+                        <td>2288-5600</td>
+                    </tr>
+                    <tr>
+                        <td>Francisco Morazán</td>
+                        <td>2288-5622</td>
+                    </tr>
+                     <tr>
+                        <td>Cortés</td>
+                        <td>2288-5623</td>
+                    </tr>
+                     <tr>
+                        <td>La Paz</td>
+                        <td>2288-5677</td>
+                    </tr>
+                     <tr>
+                        <td>Atlántida</td>
+                        <td>2288-5678</td>
+                    </tr>
+                     <tr>
+                        <td>Islas de la Bahía</td>
+                        <td>2288-5688</td>
+                    </tr>
+                </table>
+        </div>
+        <div>
+            <div>
+                <h3>Información General</h3>
+                <p>Correo: infomublesig@gmail.hn </p>
+                <p>Horario de Atención:</p>
+                <p>Lunes a viernes, de 8:00 a.m. a 5:00 p.m.</p>
+                <p>Sábados, de 8:00 a.m. a 12:00 p.m.</p>
+            </div>
+        </div>
+        <div>
+            <h2>¡Escríbenos tu consulta!</h2>
+            <form action="#" method="post">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo">
+            <label for="telefono">Teléfono (8 digitos)</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}" 
+            maxlength="8" placeholder="94346678">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" 
+            maxlength="600"></textarea>
+            <button type="submit">Enviar Consulta</button>
+            </form>
+        </div>
+    </main>
+</body> 
+</html>
