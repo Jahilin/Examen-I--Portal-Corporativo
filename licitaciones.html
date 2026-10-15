@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licitaciones| Mublesig Honduras</title>
+</head>
+<body>
+    <div>
+    <header>
+     <nav>
+        <a href="index.html">Quienes Somos</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="lotes.html">Lotes Especiales</a>
+        <a href="Licitaciones.html">Licitaciones</a>
+        <a href="contacto.html">Contacto</a>
+     </nav>
+        <img src="img/logo.png" alt="Logo de la marca">
+        <h1>MUBLESIG HONDURAS</h1>
+        <p>Somos tu mejor opcion, cotiza con nosotros</p>
+    </header>
+    </div>
+    <main>
+        <h2>Formulario para Requisitos y Licitaciones</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required minlength="5" maxlength="60"
+                placeholder="Ej: Mario Mendoza">
+                <label for="rtn">RTN Institucional</label>
+                <input type="text" id="rtn" name="rtn" required minlength="14" maxlength="14" pattern="[0-9]{8}">
+                <label for="correo">Correo Electronico Institucional</label>
+                <input type="email" id="correo" name="correo" required placeholder="jahilin@unah.hn">
+                <label for="telefono">Teléfono (8 digitos)</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}" 
+                maxlength="8" placeholder="94346678">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Entrega</legend>
+                <label for="departamento">Departamento de Entrega</label>
+                <select id="departamento" name="departamento" required>
+                        <option value="">--Seleccione un Departamento-</option>
+                        <option value="comayagua">Comayagua</option>
+                        <option value="fm">Francisco Morazan</option>
+                        <option value="cortes">Cortes</option>
+                        <option value="lapaz">La Paz</option>
+                        <option value="atlantida">Atlantida</option>
+                        <option value="islas">Islas de la Bahia</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Compromiso</legend>
+                <label class="opcion">
+                <input type="checkbox" name="compromiso" required>
+                 Acepto los terminos de garantia forestal de 5 años.</label><br>
+            </fieldset>
+            <button type="submit">Enviar solicitud</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+</body>
+</html>
