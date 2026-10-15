@@ -9,70 +9,80 @@
 </head>
 <body>
     <div>
-    <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="lotes.html">Lotes Especiales</a>
-            <a href="licitaciones.html">Licitaciones</a>
-            <a href="contacto.html">Contacto</a>
+    <header class="bg-dark text-warning text-center">
+        <nav class="d-flex flex-wrap justify-content-end bg-warning py-2 bg-opacity-50">
+            <a href="index.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Inicio</a>
+            <a href="catalogo.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Catálogo</a>
+            <a href="lotes.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Lotes Especiales</a>
+            <a href="licitaciones.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Licitaciones</a>
+            <a href="contacto.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Contacto</a>
         </nav>
-        <img src="img/logo.png" alt="Logo de la marca">
-        <h1>MUBLESIG HONDURAS</h1>
-        <p>La mejor opción para tu hogar</p>
+        <img src="img/logo.png" alt="Logo de la marca" class="mt-2" style="height: 200px;">
+        <h1 class="display-5 fw-bold">MUBLESIG HONDURAS</h1>
+        <p class="lead pb-4">La mejor opción para tu hogar</p>
     </header>
     </div>
-    <main>
-         <div>
+    <main class="container my-5">
+        <div class="text-center mb-5 bg-light rounded-4 shadow-sm p-4">
+            <h2 class="fw-bold">Quienes Somos</h2>
+            <p class="text-muted">Somos una fábrica de muebles y carpintería 
+                industrial ubicada en la Carretera CA-5, en Siguatepeque, Comayagua. 
+                Fabricamos mobiliario de oficina y hotelería para empresas, universidades y
+                 hoteles de todo el país.</p>
+            <h3 class="h5 fw-bold">Nuestro Taller</h3>
+            <p class="text-muted">Trabajamos con madera certificada de Caoba, 
+                Pino Oocarpa y Cedro, con control de calidad en cada pieza.</p>
+        </div>
+         <div class="text-center mb-5">
             <h2>Puedes contactarnos fácilmente</h2>
-            <div>
-                <strong><p>Horario:</p></strong>
+            <div class="bg-light rounded-4 shadow-sm p-4">
+                <strong><p><i class="bi bi-clock-fill mx-2"></i>Horario:</p></strong>
                 <p>Lunes a Viernes, 8:00 a.m. a 5:00 p.m.</p>
                 <p>Sábados, de 8:00 a.m. a 12:00 p.m.</p>
-                <p>Teléfonos: 2200-6778, 2345-7788</p>
-                <button type="button">Cotizar Lote por WhatsApp</button>
+                <p><i class="bi bi-telephone-fill mx-2"></i>Teléfonos: 2200-6778, 2345-7788</p>
+                <button type="button" class="btn btn-warning btn-lg rounded-pill px-4 fw-bold"><i class="bi bi-whatsapp mx-2"></i>Cotizar Lote por WhatsApp</button>
             </div>
         </div>
         <div>
-            <form action="#" method="post">
-            <h2>Calculadora de Pedidos</h2>
-            <fieldset>
-                <legend>Datos para calcular el pedido</legend>
-                <label for="cantidad">Cantidad de Piezas</label>
-                <input type="number" id="cantidad" min="1" value="1" required>
-                <label for="mueble">Tipo de mueble</label>
-                <select id="mueble" name="mueble" required>
+            <form action="#" method="post" class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white">
+            <h2 class="fw-bold">Calculadora de Pedidos</h2>
+            <fieldset class="border rounded-3 p-3 mb-3">
+                <legend class="fs-5 fw-bold">Datos para calcular el pedido</legend>
+                <label for="cantidad" class="form-label mt-2">Cantidad de Piezas</label>
+                <input type="number" class="form-control" id="cantidad" min="1" value="1" required>
+                <label for="mueble" class="form-label mt-2">Tipo de mueble</label>
+                <select id="mueble" name="mueble" required class="form-select">
                         <option value="">--Seleccione un tipo de mueble-</option>
                         <option value="pupitre">Pupitre Universitario - L. 1,290</option>
                         <option value="silla">Silla Ergonómica Operativa - L. 4,800</option>
                         <option value="escritorio">Escritorio Ejecutivo en Caoba - L. 24,500</option>
                         <option value="mesa">Mesa de Directorio en Cedro - L. 39,900</option>
                 </select>
-                <label for="destino">Destino</label>
-                <select id="destino" name="destino" required>
+                <label for="destino" class="form-label mt-2">Destino</label>
+                <select id="destino" name="destino" required class="form-select">
                         <option value="">--Seleccione su destino-</option>
                         <option value="sigua_coma">Siguatepeque/Comayagua - Flete: L. 300</option>
                         <option value="tgu_sps">Tegucigalpa o SPS - Flete: L. 1,000</option>
                         <option value="isla">Roatán/Islas de la Bahía - Flete: L. 3,500</option>
                 </select>
-                <p><strong>* Descuento institucional del 12% a partir de 10 piezas</strong></p>
-                <button type="submit">Calcular Presupuesto</button>
+                <p class="alert alert-warning mt-3"><strong>* Descuento institucional del 12% a partir de 10 piezas</strong></p>
+                <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold rounded-pill"><i class="bi bi-calculator-fill mx-2"></i>Calcular Presupuesto</button>
             </fieldset>
-            <div>
-                <p>El costo estimado de su pedido es L. 20,000</p>
+            <div class="bg-dark text-white font-monospace border border-success rounded-4 p-3 mt-3">
+                <p class="mb-0">El costo estimado de su pedido es L. 20,000</p>
             </div>
         </form>
         </div>
     </main>
-    <footer>
+    <footer class="bg-dark text-light py-4 mt-5 d-flex flex-wrap justify-content-around text-center">
         <div>
-        <p>KM 14 Carretera CA-5, Siguatepeque - Tel: 2345-2444</p>
-        <p>Blvd. Morazán, Tegucigalpa, Tel - 2456-8898</p>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>KM 14 Carretera CA-5, Siguatepeque - Tel: 2345-2444</p>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Blvd. Morazán, Tegucigalpa, Tel - 2456-8898</p>
         </div>
         <div>
-            <p>Redes Sociales</p>
-            <a href="https://facebook.com">Facebook</a>
-            <a href="https://instagram.com">Instagram</a>
+            <p class="mb-1">Redes Sociales</p>
+            <a href="https://facebook.com" class="text-light mx-2"><i class="bi bi-facebook me-2"></i>Facebook</a>
+            <a href="https://instagram.com" class="text-light mx-2"><i class="bi bi-instagram me-2"></i>Instagram</a>
         </div>
     </footer>
 </body>
