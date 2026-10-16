@@ -4,84 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotes Especiales | Mublesig Honduras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 <body>
     <div>
-    <header>
-         <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="lotes.html">Lotes Especiales</a>
-        <a href="licitaciones.html">Licitaciones</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-        <img src="img/logo.png" alt="Logo de la marca">
-        <h1>MUBLESIG HONDURAS</h1>
-        <p>Encuentra las mejores ofertas en este lugar</p>
+    <header class="bg-dark text-warning text-center">
+        <nav class="d-flex flex-wrap justify-content-end bg-warning py-2 bg-opacity-50">
+            <a href="index.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Inicio</a>
+            <a href="catalogo.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Catálogo</a>
+            <a href="lotes.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Lotes Especiales</a>
+            <a href="licitaciones.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Licitaciones</a>
+            <a href="contacto.html" class="px-3 py-2 text-black fw-bold text-decoration-none">Contacto</a>
+        </nav>
+        <img src="img/logo.png" alt="Logo de la marca" class="mt-2" style="height: 200px;">
+        <h1 class="display-5 fw-bold">MUBLESIG HONDURAS</h1>
+        <p class="lead pb-4">Encuentra las mejores ofertas en este lugar</p>
     </header>
     </div>
-    <main>
+    <main class="container my-5">
         <section id="lotes-especiales">
-            <div>
-                <div>
-                    <span>DESCUENTO POR LOTE</span>
+            <div class="d-flex flex-wrap gap-4 justify-content-center">
+                <div class="card shadow-sm border-0 rounded-4 overflow-hidden" style="width: 20rem;">
+                    <span class="badge bg-warning rounded-0 fs-6 py-2 text-dark">DESCUENTO POR LOTE</span>
                     <img src="https://i.etsystatic.com/23343549/r/il/65c407/4594805014/il_570xN.4594805014_81nj.jpg" 
-                     alt="Escritorio Ejecutivo de Caoba" width="500">
-                    <h3>Escritorio Ejecutivo de Caoba</h3>
-                    <span>Categoría: Línea Ejecutiva</span>
-                    <span>Detalles Técnicos: Caoba, 160x80x75, Barniz mate, Garantía 6 años</span>
-                    <p>Precio Regular: <del>Lps 24,500</del></p>
-                    <p>Oferta: <strong>Lps 19,900</strong></p>
+                     alt="Escritorio Ejecutivo de Caoba" width="500" class="card-img-top" style="height: 220px; object-fit: cover;">
+                    <h3 class="card-title h5 fw-bold px-3 pt-3 mb-1">Escritorio Ejecutivo de Caoba</h3>
+                    <span class="d-block px-3 text-muted small">Categoría: Línea Ejecutiva</span>
+                    <span class="d-block px-3 small">Detalles Técnicos: Caoba, 160x80x75, Barniz mate, Garantía 6 años</span>
+                    <p class="px-3 mt-3 mb-0">Precio Regular: <del class="text-muted">Lps 24,500</del></p>
+                    <p class="px-3 pb-3 mb-0">Oferta: <strong class="fs-3 text-success">Lps 19,900</strong></p>
                 </div>
-                <div>
-                    <span>DESCUENTO POR LOTE</span>
-                    <img src="https://todooficina.com/wp-content/uploads/2020/10/280.png" width="500" alt="Silla Operativa Ergonomica">
-                    <h3>Silla Operativa Ergonómica</h3>
-                    <span>Categoría: Línea Ejecutiva</span>
-                    <span>Detalles Técnicos: Estructura de metal y malla, 60x60x110 cm, Pintura epóxica, Garantía 5 años</span>
-                    <p>Precio Regular: <del>Lps 4,800</del></p>
-                    <p>Oferta: <strong>Lps 3,150</strong></p>
+                <div class="card shadow-sm border-0 rounded-4 overflow-hidden" style="width: 20rem;">
+                    <span class="badge bg-warning rounded-0 fs-6 py-2 text-dark">DESCUENTO POR LOTE</span>
+                    <img src="https://todooficina.com/wp-content/uploads/2020/10/280.png" width="500" alt="Silla Operativa Ergonomica"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                    <h3 class="card-title h5 fw-bold px-3 pt-3 mb-1">Silla Operativa Ergonómica</h3>
+                    <span class="d-block px-3 text-muted small">Categoría: Línea Ejecutiva</span>
+                    <span class="d-block px-3 small">Detalles Técnicos: Estructura de metal y malla, 60x60x110 cm, Pintura epóxica, Garantía 5 años</span>
+                    <p class="px-3 mt-3 mb-0">Precio Regular: <del>Lps 4,800</del></p>
+                    <p class="px-3 pb-3 mb-0">Oferta: <strong class="fs-3 text-success">Lps 3,150</strong></p>
                 </div>
-                <div>
-                    <span>DESCUENTO POR LOTE</span>
-                    <img src="https://promart.vteximg.com.br/arquivos/ids/11024872/Image-1.jpg?v=639185263067370000" width="500" alt="Mesa de Escritorio de Cedro">
-                    <h3>Mesa de Escritorio de Cedro</h3>
-                    <span>Categoría: Hotelería</span>
-                    <span>Detalles Técnicos: Cedro, 140x70x75 cm, Laca natural, Garantía 6 años</span>
-                    <p>Precio Regular: <del>Lps 8,900</del></p>
-                    <p>Oferta: <strong>Lps 6,895</strong></p>
+                <div class="card shadow-sm border-0 rounded-4 overflow-hidden" style="width: 20rem;">
+                    <span class="badge bg-warning rounded-0 fs-6 py-2 text-dark">DESCUENTO POR LOTE</span>
+                    <img src="https://promart.vteximg.com.br/arquivos/ids/11024872/Image-1.jpg?v=639185263067370000" width="500" alt="Mesa de Escritorio de Cedro"
+                    class="card-img-top" style="height: 220px; object-fit: cover;">
+                    <h3 class="card-title h5 fw-bold px-3 pt-3 mb-1">Mesa de Escritorio de Cedro</h3>
+                    <span class="d-block px-3 text-muted small">Categoría: Hotelería</span>
+                    <span class="d-block px-3 small">Detalles Técnicos: Cedro, 140x70x75 cm, Laca natural, Garantía 6 años</span>
+                    <p class="px-3 mt-3 mb-0">Precio Regular: <del>Lps 8,900</del></p>
+                    <p class="px-3 pb-3 mb-0">Oferta: <strong class="fs-3 text-success">Lps 6,895</strong></p>
                 </div>
-                <div>
-                    <span>DESCUENTO POR LOTE</span>
+                <div class="card shadow-sm border-0 rounded-4 overflow-hidden" style="width: 20rem;">
+                    <span class="badge bg-danger rounded-0 fs-6 py-2 text-white">OFERTA</span>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYbfnfthXOite31wnFrZyJItebGI27RxY_gqgFMZxK6WVQkWLcJjjhfg&s=10"
-                     alt="Mesa de Directorio" width="500">
-                    <h3>Mesa de Directorio en Cedro</h3>
-                    <span>Categoría: Línea Ejecutiva</span>
-                    <span>Detalles Técnicos: Cedro, 300x120x75 cm, Laca natural, Garantía 5 años</span>
-                    <p>Precio Regular: <del>Lps 39,900</del></p>
-                    <p>Oferta: <strong>Lps 35,000</strong></p>
+                     alt="Mesa de Directorio" width="500" class="card-img-top" style="height: 220px; object-fit: cover;">
+                    <h3 class="card-title h5 fw-bold px-3 pt-3 mb-1">Mesa de Directorio en Cedro</h3>
+                    <span class="d-block px-3 text-muted small">Categoría: Línea Ejecutiva</span>
+                    <span class="d-block px-3 small">Detalles Técnicos: Cedro, 300x120x75 cm, Laca natural, Garantía 5 años</span>
+                    <p class="px-3 mt-3 mb-0">Precio Regular: <del>Lps 39,900</del></p>
+                    <p class="px-3 pb-3 mb-0">Oferta: <strong class="fs-3 text-success">Lps 35,000</strong></p>
                 </div>
-                <div>
-                    <span>DESCUENTO POR LOTE</span>
-                    <img src="https://i.pinimg.com/736x/7f/57/88/7f57881ffec6e7f32499857376501069.jpg" alt="Mostrador de Recepcion" width="500">
-                    <h3>Mostrador de Recepción</h3>
-                    <span>Categoría: Hotelería</span>
-                    <span>Detalles Técnicos: Nogal, 200x70x105 cm, Barniz satinado, Garantía 5 años</span>
-                    <p>Precio Regular: <del>Lps 21,000</del></p>
-                    <p>Oferta: <strong>Lps 18,678</strong></p>
+                <div class="card shadow-sm border-0 rounded-4 overflow-hidden" style="width: 20rem;">
+                    <span class="badge bg-danger rounded-0 fs-6 py-2 text-white">OFERTA</span>
+                    <img src="https://i.pinimg.com/736x/7f/57/88/7f57881ffec6e7f32499857376501069.jpg" alt="Mostrador de Recepcion" width="500"
+                     class="card-img-top" style="height: 220px; object-fit: cover;">
+                    <h3 class="card-title h5 fw-bold px-3 pt-3 mb-1">Mostrador de Recepción</h3>
+                    <span class="d-block px-3 text-muted small">Categoría: Hotelería</span>
+                    <span class="d-block px-3 small">Detalles Técnicos: Nogal, 200x70x105 cm, Barniz satinado, Garantía 5 años</span>
+                    <p class="px-3 mt-3 mb-0">Precio Regular: <del>Lps 21,000</del></p>
+                    <p class="px-3 pb-3 mb-0">Oferta: <strong class="fs-3 text-success">Lps 18,678</strong></p>
                 </div>
-                <div>
-                    <span>DESCUENTO POR LOTE</span>
+                <div class="card shadow-sm border-0 rounded-4 overflow-hidden" style="width: 20rem;">
+                    <span class="badge bg-danger rounded-0 fs-6 py-2 text-white">OFERTA</span>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwdsAaCWpvyMvH3OsNvAe5x5ttxLVx0gJj_PRNuORX81ghmCtwZ1tLdcs&s=10"
-                     alt="Silla para Auditorio" width="500">
-                    <h3>Silla para Auditorio</h3>
-                    <span>Categoría: Aulas Universitarias</span>
-                    <span>Detalles Técnicos: Pino Oocarpa y tapizado, 55x55x90 cm, Barniz mate, Garantía 4 años</span>
-                    <p>Precio Regular: <del>Lps 2,350</del></p>
-                    <p>Oferta: <strong>Lps 1,798</strong></p>
+                     alt="Silla para Auditorio" width="500" class="card-img-top" style="height: 220px; object-fit: cover;">
+                    <h3 class="card-title h5 fw-bold px-3 pt-3 mb-1">Silla para Auditorio</h3>
+                    <span class="d-block px-3 text-muted small">Categoría: Aulas Universitarias</span>
+                    <span class="d-block px-3 small">Detalles Técnicos: Pino Oocarpa y tapizado, 55x55x90 cm, Barniz mate, Garantía 4 años</span>
+                    <p class="px-3 mt-3 mb-0">Precio Regular: <del>Lps 2,350</del></p>
+                    <p class="px-3 pb-3 mb-0">Oferta: <strong class="fs-3 text-success">Lps 1,798</strong></p>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="bg-dark text-light py-4 mt-5 d-flex flex-wrap justify-content-around text-center">
+        <div>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>KM 14 Carretera CA-5, Siguatepeque - Tel: 2345-2444</p>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Blvd. Morazán, Tegucigalpa, Tel - 2456-8898</p>
+        </div>
+        <div>
+            <p class="mb-1">Redes Sociales</p>
+            <a href="https://facebook.com" class="text-light mx-2"><i class="bi bi-facebook me-2"></i>Facebook</a>
+            <a href="https://instagram.com" class="text-light mx-2"><i class="bi bi-instagram me-2"></i>Instagram</a>
+        </div>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
